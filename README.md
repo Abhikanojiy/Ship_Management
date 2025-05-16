@@ -1,12 +1,62 @@
-# React + Vite
+# 🚢 Ship Maintenance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, role-based dashboard for managing ships, components, and maintenance jobs. Built using **React** with **Context API**, the app simulates a realistic internal tool for ENTNT using only **localStorage** for data persistence. No backend or external API is used.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Deployed Link:** fluffy-kitten-832a81.netlify.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Features
+
+### 🔐 User Authentication (Simulated)
+- Hardcoded users (Admin, Inspector, Engineer)
+- Login via email/password
+- Role-based access control
+- Session persistence using localStorage
+
+### 🚢 Ships Management
+- View, Create, Edit, Delete ships
+- Ship profile includes general info, maintenance history, and components
+
+### ⚙️ Ship Components
+- Add/Edit/Delete components linked to ships
+- View component details (Name, Serial Number, Install Date, Last Maintenance)
+
+### 🛠 Maintenance Jobs
+- Create jobs for components (Type, Priority, Status, Assigned Engineer)
+- Filter by Ship, Priority, Status
+- Update job statuses as they progress
+
+### 📅 Maintenance Calendar
+- Calendar view (Monthly/Weekly) of scheduled jobs
+- Click on a date to view scheduled jobs
+
+### 🔔 Notification Center
+- In-app notifications for job creation, updates, and completion
+- Notifications are dismissible
+
+### 📊 KPIs Dashboard
+- Cards showing:
+  - Total ships
+  - Components with overdue maintenance
+  - Jobs in progress
+  - Jobs completed
+- Basic charts for visual analytics
+
+---
+
+## 🧱 Tech Stack
+
+- **React (Vite)**
+- **Context API** for global state
+- **React Router** for navigation
+- **Tailwind CSS** for styling
+- **localStorage** for data simulation and persistence
+- **date-fns** for date handling
+- **react-calendar** for calendar view
+
+---
+
+
